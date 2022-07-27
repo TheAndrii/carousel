@@ -1,0 +1,128 @@
+@media only screen and (max-width: 1200px) {
+    .container__carousel button {
+      background-color: #fff;
+      position: relative;
+    }
+    .container__carousel #carousel__bth_right {
+      margin-left: -25px;
+      z-index: 50;
+    }
+    .container__carousel #carousel__bth_left {
+      margin-right: -25px;
+      z-index: 50;
+    }
+    .container__carousel {
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (min-width: 1201px) {
+    .container__carousel button {
+      background: transparent;
+    }
+    .container__carousel {
+      width: 85%;
+    }
+  }
+  
+  @media only screen and (max-width: 765px) {
+    .carousel-item {
+        min-width: 100%;
+    }
+    .container__carousel {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 766px) {
+    .carousel__item {
+        min-width: 50%;
+    }
+  }
+  
+  .container__carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 500px;
+    height: 100%;
+    margin: 2rem 0;
+  }
+  
+  .container__carousel button {
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+  
+    border: none;
+  
+    border-radius: 50%;
+  }
+  .container__carousel button i {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  
+  .container__carousel button:hover {
+    color: #e0e0e0;
+  }
+  
+  .container__carousel button:active {
+    color: #7c7c7c;
+  }
+  
+  #carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-left: 0;
+  }
+  
+  #carousel::-webkit-scrollbar {
+    width: 0
+  }
+  
+  .carousel__item {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 25px;
+  }
+  
+  #carousel h2 {
+    font-family: sans-serif;
+    text-align: left;
+    margin: 1rem 0;
+  }
+  
+  #carousel p {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(190, 187, 187);
+  }
+  
+  .post_carousel {
+    height: 100%;
+    padding: 25px;
+    background-color: #032540;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .carousel_img {
+    height: 45px;
+    margin-bottom: 1rem;
+  }
+  
+  #carousel .time {
+    color: #ffa800;
+    font-weight: 900;
+    margin-top: 1rem;
+  }
